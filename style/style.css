@@ -1,0 +1,109 @@
+a {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+div#content {
+    background: rgb(215, 215, 215);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    box-shadow: 10px 10px 5px #888;
+    border-radius: 14px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -133px 0 0 -513px;
+    min-height: 265px;
+    width: 620px;
+    behavior: url("pie/PIE.htc");
+}
+
+div#sidebar {
+    background: rgb(215, 215, 215);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    border-radius: 14px;
+    box-shadow: 10px 10px 5px #888;
+    width: 189px;
+    min-height: 226px;
+    position: absolute;
+    left: 660px;
+    padding: 20px;
+    behavior: url("pie/PIE.htc");
+}
+
+div#my_photo {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+div#my_photo a {
+    position: absolute;
+    top: 197px;
+    left: 40px;
+    color: #008cdc;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+div#aboutme {
+    position: absolute;
+    width: 310px;
+    left: 200px;
+    top: 25px;
+}
+
+div#aboutme p {
+    line-height: 20px;
+    text-align: justify;
+}
+
+div#aboutme h1 {
+    color: #000000;
+    font-size: 25px;
+}
+
+img.github {
+    margin-top: 10px;
+}
+
+div#sidebar p {
+    line-height: 20px;
+}
+
+div#sidebar ul {
+    font-size: 12px;
+    line-height: 50px;
+}
+
+div#sidebar ul a {
+    color: #008cdc;
+    text-decoration: none;
+}
+
+div#icons {
+    position: absolute;
+    left: 525px;
+    top: 20px;
+}
+
+div#icons ul li {
+    margin-bottom: 25px;
+}
