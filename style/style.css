@@ -22,11 +22,11 @@ div#content {
     box-shadow: 10px 10px 5px #888;
     border-radius: 14px;
     position: fixed;
-    left: 50%;
-    top: 50%;
+    left: 40%;
+    top: 40%;
     margin: -133px 0 0 -310px;
-    min-height: 265px;
-    width: 620px;
+    min-height: 380px;
+    width: 825px;
     behavior: url("pie/PIE.htc");
 }
 
@@ -51,13 +51,13 @@ div#sidebar {
 div#my_photo {
     position: absolute;
     left: 20px;
-    top: 30px;
+    top: 80px;
 }
 
 div#my_photo a {
     position: absolute;
-    top: 210px;
-    left: 40px;
+    top: 220px;
+    left: 20px;
     color: #008cdc;
     text-decoration: none;
     font-size: 15px;
@@ -65,7 +65,7 @@ div#my_photo a {
 
 div#aboutme {
     position: absolute;
-    width: 310px;
+    width: 522px;
     left: 200px;
     top: 25px;
 }
@@ -73,6 +73,10 @@ div#aboutme {
 div#aboutme p {
     line-height: 20px;
     text-align: justify;
+    font-size: 12px;
+}
+p strong {
+    font-weight: bold;
 }
 
 div#aboutme h1 {
@@ -84,24 +88,10 @@ img.github {
     margin-top: 10px;
 }
 
-div#sidebar p {
-    line-height: 20px;
-}
-
-div#sidebar ul {
-    font-size: 12px;
-    line-height: 50px;
-}
-
-div#sidebar ul a {
-    color: #008cdc;
-    text-decoration: none;
-}
-
 div#icons {
     position: absolute;
-    left: 530px;
-    top: 28px;
+    left: 752px;
+    top: 98px;
 }
 
 div#icons ul li {
