@@ -25,7 +25,7 @@ div#content {
     left: 40%;
     top: 40%;
     margin: -133px 0 0 -310px;
-    min-height: 380px;
+    min-height: 420px;
     width: 825px;
     behavior: url("pie/PIE.htc");
 }
@@ -51,7 +51,7 @@ div#sidebar {
 div#my_photo {
     position: absolute;
     left: 20px;
-    top: 80px;
+    top: 116px;
 }
 
 div#my_photo a {
@@ -91,9 +91,9 @@ img.github {
 div#icons {
     position: absolute;
     left: 752px;
-    top: 98px;
+    top: 116px;
 }
 
 div#icons ul li {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
