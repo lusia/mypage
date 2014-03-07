@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
     <meta http-equiv="x-ua-compatible" content="IE=9">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" media="screen" href="style/reset.css">
@@ -11,8 +12,8 @@
 <div id="content">
     <div id="my_photo">
         <img src="images/elzbieta_leska_twarog.jpg" alt="Elzbieta Leska-Twarog">
-        <a href="file/Elzbieta_Leska_Twarog_Resume.pdf" target="_blank"
-           onClick="_gaq.push(['_trackEvent', 'File', 'Download', 'Elzbieta_Resume']);">My resume</a>
+        <a class="event file" href="file/Elzbieta_Leska_Twarog_Resume.pdf" target="_blank"
+           data-events="_trackEvent, File, Download, Resume">My resume</a>
     </div>
     <div id="aboutme">
         <h1>Elżbieta Leska-Twaróg</h1>
@@ -42,15 +43,17 @@
     </div>
     <div id="icons">
         <ul>
-            <li><a class="linkedin" href="http://www.linkedin.com/pub/elzbieta-leska-twarog/a/382/2a2"
-                   target="_blank" onClick="_gaq.push(['_trackEvent', 'Social', 'Click', 'Linkedin']);"><img
-                    class="linkedin" src="images/linkedin.png" alt="linkedin"></a></li>
-            <li><a class="github" href="https://github.com/lusia" target="_blank"><img class="github"
-                                                                                       src="images/octocat.png"
-                                                                                       alt="github"></a></li>
-            <li><a class="twitter" href="https://twitter.com/ela_leska" target="_blank"><img class="twitter"
-                                                                                             src="images/twitter.png"
-                                                                                             alt="twitter"></a></li>
+            <li><a class="linkedin event" href="http://www.linkedin.com/pub/elzbieta-leska-twarog/a/382/2a2"
+                   target="_blank" data-events="_trackEvent, Social, Click, Linkedin"><img class="linkedin"
+                                                                                           src="images/linkedin.png"
+                                                                                           alt="linkedin"></a></li>
+            <li><a class="github event" href="https://github.com/lusia" target="_blank"
+                   data-events="_trackEvent, Social, Click, Github"><img class="github"
+                                                                         src="images/octocat.png" alt="github"></a></li>
+            <li><a class="twitter event" href="https://twitter.com/ela_leska" target="_blank"
+                   data-events="_trackEvent, Social, Click, Twitter"><img class="twitter"
+                                                                          src="images/twitter.png" alt="twitter"></a>
+            </li>
         </ul>
     </div>
 
@@ -71,6 +74,13 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ga, s);
     })();
+
+    $(".event").click(function (evt) {
+
+        var ev = $(this).attr("data-events");
+        ev = ev.split(",");
+        _gaq.push(ev);
+    });
 
 </script>
 </body>
